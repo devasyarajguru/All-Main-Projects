@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devasya Rajguu - Web Developer</title>
+    <link rel="stylesheet" href="..//css/styles.css">
+</head>
+<body><div class="container">
+    <div class="sidebar">
+      
+      <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="intro.html">My Intro</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>  
+    </div>
+    <div class="main">
+        <div class="info-container">
+           
+          <div class="devinfo">
+            <h2 class="typewritter">Hi I am Devasya Rajguru</h2>
+            <div class="wrapper">
+              <p>Developer</p>
+            </div>
+            <div class="myinfo">
+             <b> I am a Web Developer, and I am interested in Full Stack Developement. Currently in 5th Semester at Silver Oak University.</b>
+            </div>
+            <!-- <div class="about"><h2>Developer, Student</h2></div> -->
+            <div class="buttons">
+              <button>Download CV</button>
+              <button>Contact Me</button>
+            
+            </div> 
+            
+          </div>
+          <div class="devpic">
+            <img src="..//images/img1.png" alt="Devasya">
+          </div>
+        </div>
+</div>
+</body>
+<script>
+  (function() {
+
+    var word = ['Developer', 'Youtuber', 'Student', 'Engineer'];
+    var element = document.getElementsByTagName('p')[0];
+    var wordIndex = 1;
+
+    var resetAnimation = function() {
+      element.classList.remove('flip');
+    }
+
+    setInterval(function(){
+        switch (wordIndex) {
+          case 0:
+            element.classList.add('flip');
+            element.textContent = word[wordIndex];
+            wordIndex = 1;
+            setTimeout(resetAnimation, 1000);
+          break;
+
+          case 1:
+            element.classList.add('flip');
+            element.textContent = word[wordIndex];
+            wordIndex = 2;
+            setTimeout(resetAnimation, 1000);
+          break;
+
+          case 2:
+            element.classList.add('flip');
+            element.textContent = word[wordIndex];
+            wordIndex = 3;
+            setTimeout(resetAnimation, 1000);
+          break;
+
+          case 3:
+            element.classList.add('flip');
+            element.textContent = word[wordIndex];
+            wordIndex = 0;
+            setTimeout(resetAnimation, 1000);
+          break;
+        }
+    },2000)
+}());
+</script>
+</html>
